@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Web Design Portfolio</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #222;
+        }
+
+        header {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        header h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        nav {
+            background-color: #333;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        nav a:hover {
+            color: #ddd;
+        }
+
+        section {
+            max-width: 1000px;
+            margin: auto;
+            padding: 50px 20px;
+        }
+
+        .about {
+            text-align: center;
+        }
+
+        .projects {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .card {
+            background-color: white;
+            width: 300px;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px #ccc;
+        }
+
+        .card h3 {
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #222;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .button:hover {
+            background-color: #555;
+        }
+
+        .contact {
+            text-align: center;
+        }
+
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 30px;
+            }
+
+            .card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>My Web Design Portfolio</h1>
+        <p>Simple • Creative • Responsive Websites</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <br>
+
+        <p>
+            Hi! I'm a beginner web designer who creates
+            simple and user-friendly websites for students
+            and small businesses.
+        </p>
+    </section>
+
+    <section id="projects">
+        <h2 style="text-align:center;">My Projects</h2>
+        <br>
+
+        <div class="projects">
+
+            <div class="card">
+                <h3>🍔 Restaurant Website</h3>
+
+                <p>
+                    A simple restaurant website featuring
+                    the menu, food information, location,
+                    and contact details.
+                </p>
+
+                <a href="restaurant.html" class="button">View Project</a>
+            </div>
+
+            <div class="card">
+                <h3>🎓 Student Website</h3>
+
+                <p>
+                    A school website designed to display
+                    school information, subjects, activities,
+                    and student resources.
+                </p>
+
+                <a href="student.html" class="button">View Project</a>
+            </div>
+
+            <div class="card">
+                <h3>💈 Business Website</h3>
+
+                <p>
+                    A simple business website where customers
+                    can see services, prices, location,
+                    and contact information.
+                </p>
+
+                <a href="business.html" class="button">View Project</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <br>
+
+        <p>Email: dillanhingco2@gmail.com</p>
+        <p>Facebook: IanWeb Studio</p>
+    </section>
+
+    <footer>
+        <p>© 2026 My Web Design Portfolio</p>
+    </footer>
+
+</body>
+</html>
