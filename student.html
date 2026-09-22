@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Hub</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            color: #222;
+        }
+
+        /* HEADER */
+
+        header {
+            background-color: #1f2937;
+            color: white;
+            text-align: center;
+            padding: 70px 20px;
+        }
+
+        header h1 {
+            font-size: 45px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        /* NAVIGATION */
+
+        nav {
+            background-color: #111827;
+            text-align: center;
+            padding: 18px;
+            position: sticky;
+            top: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+        }
+
+        nav a:hover {
+            color: #aaa;
+        }
+
+        /* SECTIONS */
+
+        section {
+            max-width: 1100px;
+            margin: auto;
+            padding: 60px 20px;
+        }
+
+        section h2 {
+            text-align: center;
+            margin-bottom: 35px;
+            font-size: 30px;
+        }
+
+        /* ABOUT */
+
+        .about {
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            line-height: 1.8;
+            box-shadow: 0 3px 10px #ddd;
+        }
+
+        .about img {
+            width: 100%;
+            max-width: 700px;
+            height: 280px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        /* SUBJECTS */
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        .card {
+            background-color: white;
+            width: 250px;
+            padding: 25px;
+            text-align: center;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px #ccc;
+        }
+
+        .card h3 {
+            margin: 15px 0 10px;
+        }
+
+        .card p {
+            line-height: 1.5;
+        }
+
+        /* ACTIVITIES */
+
+        .activities {
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            line-height: 2.3;
+            box-shadow: 0 3px 10px #ddd;
+        }
+
+        /* SCHEDULE */
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+            box-shadow: 0 3px 10px #ddd;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 15px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #1f2937;
+            color: white;
+        }
+
+        /* CONTACT */
+
+        .contact {
+            text-align: center;
+            line-height: 2;
+        }
+
+        /* BUTTON */
+
+        .button {
+            display: inline-block;
+            background-color: #1f2937;
+            color: white;
+            padding: 12px 22px;
+            text-decoration: none;
+            border-radius: 6px;
+            margin-top: 15px;
+        }
+
+        .button:hover {
+            background-color: #555;
+        }
+
+        /* FOOTER */
+
+        footer {
+            background-color: #1f2937;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 600px) {
+
+            header h1 {
+                font-size: 32px;
+            }
+
+            nav a {
+                display: block;
+                margin: 12px;
+            }
+
+            .card {
+                width: 100%;
+            }
+
+            table {
+                font-size: 13px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- HEADER -->
+
+    <header id="home">
+
+        <h1>🎓 Student Hub</h1>
+
+        <p>
+            Learn • Explore • Achieve
+        </p>
+
+    </header>
+
+
+    <!-- NAVIGATION -->
+
+    <nav>
+
+        <a href="#home">Home</a>
+
+        <a href="#about">About</a>
+
+        <a href="#subjects">Subjects</a>
+
+        <a href="#activities">Activities</a>
+
+        <a href="#schedule">Schedule</a>
+
+        <a href="#contact">Contact</a>
+
+    </nav>
+
+
+    <!-- ABOUT -->
+
+    <section id="about">
+
+        <h2>About Student Hub</h2>
+
+        <div class="about">
+
+            <img
+                src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1000&q=80"
+                alt="Students">
+
+            <p>
+                Welcome to Student Hub!
+
+                This website provides students with
+                useful information about subjects,
+                school activities, schedules,
+                and learning resources.
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- SUBJECTS -->
+
+    <section id="subjects">
+
+        <h2>My Subjects</h2>
+
+
+        <div class="cards">
+
+
+            <div class="card">
+
+                <div style="font-size:50px;">
+                    📐
+                </div>
+
+                <h3>Mathematics</h3>
+
+                <p>
+                    Learn numbers, equations,
+                    formulas, and problem solving.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <div style="font-size:50px;">
+                    🧪
+                </div>
+
+                <h3>Science</h3>
+
+                <p>
+                    Explore experiments,
+                    discoveries, and science concepts.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <div style="font-size:50px;">
+                    📖
+                </div>
+
+                <h3>English</h3>
+
+                <p>
+                    Improve reading, writing,
+                    grammar, and communication.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <div style="font-size:50px;">
+                    💻
+                </div>
+
+                <h3>ICT</h3>
+
+                <p>
+                    Learn computers,
+                    programming, and technology.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- ACTIVITIES -->
+
+    <section id="activities">
+
+        <h2>School Activities</h2>
+
+
+        <div class="activities">
+
+            <p>🏀 Intramurals</p>
+
+            <p>🔬 Science Fair</p>
+
+            <p>🎭 School Programs</p>
+
+            <p>🎨 Art Competition</p>
+
+            <p>📚 Reading Activities</p>
+
+        </div>
+
+    </section>
+
+
+    <!-- SCHEDULE -->
+
+    <section id="schedule">
+
+        <h2>Class Schedule</h2>
+
+
+        <table>
+
+            <tr>
+                <th>Time</th>
+                <th>Subject</th>
+                <th>Room</th>
+            </tr>
+
+            <tr>
+                <td>7:30 AM</td>
+                <td>Mathematics</td>
+                <td>Room 101</td>
+            </tr>
+
+            <tr>
+                <td>9:00 AM</td>
+                <td>Science</td>
+                <td>Room 102</td>
+            </tr>
+
+            <tr>
+                <td>10:30 AM</td>
+                <td>English</td>
+                <td>Room 103</td>
+            </tr>
+
+            <tr>
+                <td>1:00 PM</td>
+                <td>ICT</td>
+                <td>Computer Lab</td>
+            </tr>
+
+        </table>
+
+    </section>
+
+
+    <!-- CONTACT -->
+
+    <section id="contact">
+
+        <h2>Contact</h2>
+
+
+        <div class="contact">
+
+            <p>
+                📧 Email: studenthub@email.com
+            </p>
+
+            <p>
+                📍 Location: Cebu City, Philippines
+            </p>
+
+            <p>
+                📱 Phone: 0912-345-6789
+            </p>
+
+
+            <a
+                href="mailto:studenthub@email.com"
+                class="button">
+
+                Contact Us
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            © 2026 Student Hub
+        </p>
+
+        <p>
+            Sample Student Website
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
